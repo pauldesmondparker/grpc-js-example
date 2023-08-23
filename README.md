@@ -7,6 +7,10 @@ Last Update: 20230823
 
 ## Setup
 
+> [!Note]
+> This repository does not include **ANY** code that can be generated. Therefore, for the example
+> to work, you must first generate the grpc ts files with `pnpm proto:gen`.
+
 ```bash
 # Install all dependencies
 pnpm i
@@ -28,3 +32,6 @@ pnpm startclient
 > [!Note]
 > Notice that there's no tsconfig file. For some reason, at present, ts-node doesn't work with
 > any setup that I tried. Ref: https://github.com/TypeStrong/ts-node/issues/1007
+
+> [!Note]
+> Using `ts-node` with no `tsconfig.json` works with no issue.
