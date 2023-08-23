@@ -11,6 +11,14 @@ Last Update: 20230823
 > This repository does not include **ANY** code that can be generated. Therefore, for the example
 > to work, you must first generate the grpc ts files with `pnpm proto:gen`.
 
+> [!Warning]
+> Adding new files to the `proto/` directory will not show up in unstaged files, you'll need to
+> `git add -f proto/new.proto` to force add a new hypothetical proto file.
+
+> [!Important]
+> Do **NOT** add any generated files in the `proto/` directory. They are ignored for a reason.
+> As a rule of thumb, do not add any `.ts` files in this directory.
+
 ```bash
 # Install all dependencies
 pnpm i
